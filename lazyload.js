@@ -7,7 +7,6 @@
             if (!isLoad(subject)) {
                 var rect = getElementTop(subject);
                 var screenHeight = window.innerHeight;
-                console.info(screenHeight, rect.bottom);
                 if ((rect.top >= 0 && screenHeight - rect.top >= 0) || (rect.bottom >= 0 && rect.bottom - screenHeight <= 0)) {
                     subject.setAttribute('src', dataSrc);
                 }
@@ -39,15 +38,12 @@
         var timerId;
         return function () {
             if (timerId) {
-                console.info(timerId, 'user cancel');
                 clearTimeout(timerId);
                 timerId = null;
             }
             timerId = setTimeout(function () {
-                console.info('load');
                 fn.apply(this, arguments);
             }, delay);
-            console.info(timerId);
 
         }
     };
