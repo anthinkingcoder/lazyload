@@ -1,7 +1,7 @@
 (function () {
     var subjects;
     var lazyLoad = function () {
-        subjects = subjects || getSujects();
+        subjects = subjects || getSubjects();
         subjects.forEach(function (subject) {
             var dataSrc = subject.getAttribute('data-src');
             if (!isLoad(subject)) {
@@ -62,7 +62,7 @@
     var isLoad = function (element) {
         return !!element.getAttribute('src');
     };
-    var getSujects = function () {
+    var getSubjects = function () {
         var imgs = document.querySelectorAll('img');
         var subjects = Array.prototype.slice.call(imgs);
         return subjects.filter(function (subject) {
