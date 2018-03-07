@@ -1,0 +1,41 @@
+{
+  "name": "lazyload",
+  "version": "1.0.0",
+  "description": "懒加载",
+  "main": "lazyload.js",
+  "scripts": {
+    "start": "webpack-dev-server --quiet & http-server -c-1 -p 8081",
+    "build": "webpack --env.production",
+    "dev": "webpack --env.devolepment",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthinkingcoder/lazyload.git"
+  },
+  "keywords": [
+    "lazyload"
+  ],
+  "author": "zhoulin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthinkingcoder/lazyload/issues"
+  },
+  "homepage": "https://github.com/anthinkingcoder/lazyload#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "http-server": "^0.11.1",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.0.5",
+    "uglifyjs-webpack-plugin": "^1.2.2"
+  }
+}

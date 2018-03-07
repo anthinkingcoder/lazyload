@@ -101,7 +101,7 @@ let getSubjects = function () {
 
 
 //默认去抖延迟加载
-let handler = debounce(load, 100);
+let handler = debounce(load, 500);
 document.addEventListener('scroll', handler);
 var layzLoad = {
     setMode: function (lazyMode, delay, seeMode) {
