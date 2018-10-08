@@ -45,7 +45,7 @@ const init = () => {
   })
 }
 
-const lazyload = (setting = options) => {
+const Lazyload = (setting = options) => {
   if (setting !== options) {
     options = {
       ...options,
@@ -59,5 +59,5 @@ const lazyload = (setting = options) => {
   init()
 }
 
-module.exports = lazyload
+module.exports = Lazyload
 
