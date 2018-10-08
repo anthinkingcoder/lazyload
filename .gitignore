@@ -24,7 +24,7 @@ coverage/
 node_modules/
 
 # IDE config
-.idea
+*.idea
 
 # output
 output/
@@ -36,3 +36,4 @@ dist/
 runtime/
 
 .DS_Store
+
