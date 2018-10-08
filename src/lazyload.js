@@ -103,7 +103,7 @@ let getSubjects = function () {
 //默认去抖延迟加载
 let handler = debounce(load, 500);
 document.addEventListener('scroll', handler);
-var layzLoad = {
+const lazyload = {
     setMode: function (lazyMode, delay, seeMode) {
         document.removeEventListener('scroll', handler);
         if (LAZY_MODE.NORMAL === lazyMode) {
@@ -125,5 +125,5 @@ var layzLoad = {
     SEE_MODE: SEE_MODE
 };
 
-module.exports = layzLoad;
+module.exports = lazyload;
 
