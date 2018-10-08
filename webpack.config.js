@@ -29,7 +29,7 @@ module.exports = function (env = {}) {
                 'node_modules'
             ]
         },
-        entry: './src/index.js',
+        entry: './src/lazyload.js',
         output: {
             filename: `${name}.js`,
             path: path.resolve(__dirname, 'dist'),
